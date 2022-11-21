@@ -45,7 +45,7 @@ pygmentsCodeFences=true
   logo = "images/portrait.jpeg" # - default "images/portrait.jpeg"
 [params.assets]
   favicon = "images/portrait.jpeg"
-  customCSS = "css/custom.css"
+  customCSS = "/sundvall-portfolio/css/custom.css"
 
 [params.social]
   github = "https://github.com/sundvall"
