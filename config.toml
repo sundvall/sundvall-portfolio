@@ -40,9 +40,9 @@ pygmentsCodeFences=true
   portfolio = "project"
 
 [params.sidebar]
-  backgroundImage = '/images/sandvik-vatten-4-regenerated.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  backgroundImage = 'images/sandvik-vatten-4-regenerated.png' # header background image - default "images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
   gradientOverlay = 'rgba(0,0,0,0.0),rgba(0,0,0,0.8)' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "images/portrait.jpeg" # - default "/images/portrait.jpeg"
+  logo = "images/portrait.jpeg" # - default "images/portrait.jpeg"
 [params.assets]
   favicon = "images/portrait.jpeg"
   customCSS = "css/custom.css"
