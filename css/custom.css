@@ -1,0 +1,27 @@
+html {
+    background-color: rgb(41, 41, 41);
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+}
+
+pre {
+    overflow: scroll;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.square-150 {
+    width:150px !important;
+    height: 150px !important;
+}
+
+.block {
+    display: block;
+}
+.shadow {
+    box-shadow: 0 0 5px #112f41;
+}
