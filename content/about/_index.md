@@ -1,13 +1,13 @@
 ---
 title: ABOUT
 description: Hey, I'm Martin Sundvall
-images: ["/images/portrait.jpeg"]
+images: ["/sundvall-portfolio/images/portrait.jpeg"]
 ---
 
 
 Hi!:wave:  
 
-<img class="shadow round square-150 block" src="/images/portrait.jpeg" caption="portrait" />
+<img class="shadow round square-150 block" src="/sundvall-portfolio/images/portrait.jpeg" caption="portrait" />
 
 I'm a front-end developer and artist living in Stockholm, Sweden.
 
@@ -49,4 +49,4 @@ Skills:
 
  
 
-{{< figure src="/images/sandvik-solnedg-1-regenerated.png" caption="Sunset over Kalmarsund transferred by algorithm in javascript" >}}
+{{< figure src="/sundvall-portfolio/images/sandvik-solnedg-1-regenerated.png" caption="Sunset over Kalmarsund transferred by algorithm in javascript" >}}
