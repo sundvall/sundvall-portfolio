@@ -1,0 +1,38 @@
+# https://gohugo.io/hosting-and-deployment/hosting-on-github/#branches-for-github-actions
+# By default, the GitHub action pushes the generated content to the gh-pages branch. 
+# This means GitHub has to serve your gh-pages branch as a GitHub Pages branch. 
+# You can change this setting by going to Settings > GitHub Pages, and change 
+# the source branch to gh-pages.
+
+name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
