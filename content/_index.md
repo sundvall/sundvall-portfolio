@@ -10,4 +10,4 @@ I'm Martin Sundvall, a front-end web developer and artist.
 
 
 
-[Get to know me better](/about "Get to know me better")
+[Get to know me better](/sundvall-portfolio/about "Get to know me better")

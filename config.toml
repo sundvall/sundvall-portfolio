@@ -14,7 +14,7 @@ pygmentsCodeFences=true
   sub = "I'm a Web Developer"
 
 [params.main]
-  latestPublishHeader = "My Latest Projecte"
+  latestPublishHeader = "My Latest Project"
 
 [taxonomies]
   design = "designs"
