@@ -6,7 +6,7 @@ jobDate: 2019
 work: [front-end-development, agile teamwork, mentoring]
 techs: [angular, typescript, scss, bootstrap, html, jest, rxjs, ngrx, git, redux-dev-tools]
 designs: [state-management, library-components, storybook, responsive, wcag]
-thumbnail: kronofogden/kronofogden.png
+thumbnail:  kronofogden.png
 projectUrl: https://kronofogden.se/
 
 ---
