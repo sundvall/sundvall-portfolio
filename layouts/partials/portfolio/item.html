@@ -1,8 +1,9 @@
 <div class="portfolio-list">
   <a href="{{.Permalink}}">
     <div class="portfolio-container">
-      Martin ändrade src : testimonial.html
-      <img title="{{.Title}}" alt="{{.Title}}" src="portfolio/{{ .Params.Thumbnail }}" />
+      Martin ändrade src : item.html
+      <p>{{ .Params.Thumbnail }}</p>
+      <img title="{{.Title}}" alt="{{.Title}}" src="{{ .Params.Thumbnail }}" />
       <div class="img-overlay">
       </div>
       <div class="portfolio-details">

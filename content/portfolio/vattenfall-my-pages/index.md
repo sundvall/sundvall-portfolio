@@ -6,7 +6,9 @@ jobDate: 2022
 work: [front-end-development, flow-charts, agile teamwork, mentoring]
 techs: [angular, typescript, css, html, svg, jest, rxjs, ngrx, git, tailwindcss, azure devops, web-components, episerver, redux-dev-tools]
 designs: [state-management, library-components, storybook, responsive]
-thumbnail: vattenfall-teckna-elavtal.png
+thumbnail: vattenfall-my-pages/vattenfall-teckna-elavtal.png
+folderName: vattenfall-my-pages
+mainImage: vattenfall-teckna-elavtal.png
 projectUrl: https://www.vattenfall.se/elavtal/teckna-elavtal/
 
 ---

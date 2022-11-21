@@ -5,7 +5,10 @@
   {{ partial "portfolio/tags" .}}
 </div>
 Martin ändrade src: single.html
-<img title="{{.Title}}" alt="{{.Title}}" src="portfolio/{{ .Params.Thumbnail }}" />
+<p>{{ .Params.Thumbnail }}</p>
+<p>{{ .Params.folderName }}</p>
+<p>{{ .Params.mainImage }}</p>
+<img title="{{.Title}}" alt="{{.Title}}" src="{{ .Params.mainImage }}" />
 
 {{ .Content }}
 
