@@ -29,7 +29,7 @@ pygmentsCodeFences=true
   mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
 
 [params.notFound]
-  gopher = "/sundvall-portfolio/images/gopher.png" # checkout https://gopherize.me/
+  gopher = "/sundvall-portfolio/images/martin-sundvall-linkedin-2022-800px-regenerated.png" # checkout https://gopherize.me/
   h1 = 'Bummer!'
   p = "It seems that this page doesn't exist."
 
