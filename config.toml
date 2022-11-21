@@ -1,4 +1,4 @@
-baseURL = "https://sundvall.github.io/"
+baseURL = "https://sundvall.github.io/sundvall-portfolio/"
 languageCode = "en-us"
 title = "Martin Sundvall"
 theme = "personal-web"
