@@ -6,7 +6,7 @@ jobDate: 2021
 work: [front-end-development, flow-charts, agile teamwork, mentoring]
 techs: [angular, typescript, css, html, svg, jest, rxjs, ngxs, git, responsive]
 designs: [flow-charts, angular-router, single-page-application]
-thumbnail: vattenfall-login/vattenfall-login.jpg
+thumbnail: /sundvall-portfolio/portfolio/vattenfall-login/vattenfall-login.jpg
 folderName: vattenfall-my-pages
 mainImage: vattenfall-teckna-elavtal.png
 projectUrl: https://www.vattenfall.se/
