@@ -1,7 +1,7 @@
 ---
 title: HOME
 description: Welcome to this coding portfolio
-images: ["images/portrait.jpeg"]
+images: ["/sundvall-portfolio/images/portrait.jpeg"]
 ---
 
 Hey,
