@@ -6,7 +6,7 @@ publishDate: "2022-11-18T12:05:00+02:00"
 ---
 
 Crossbrowser svg animation created in raw svg markup inside angular component
-{{< figure src="/post/images/animated-svg-connected-to-slider-480.gif" caption="Screenshot from the animated svg connected to a slider" >}}
+{{< figure src="/sundvall-portfolio/post/images/animated-svg-connected-to-slider-480.gif" caption="Screenshot from the animated svg connected to a slider" >}}
 <!--more-->
 
 A decent amount of tweeks were made to make the animation work both in Safari and Chrome browsers.
