@@ -1,5 +1,5 @@
 ---
-title: kronofogden my pages
+title: Kronofogden my pages
 description: customer flows for applications
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
@@ -19,8 +19,7 @@ Angular framework was used together with Karma for testing, azure for api's, Ngr
 
 As a team lead I facilitated upgrade of the angular framework and configured tools for development.
 
-
-Challenges that the team handled:
+**Challenges that the team handled:**
 - multipage sequences of forms
 - session persistence over multipage navigation
 - prefilled forms

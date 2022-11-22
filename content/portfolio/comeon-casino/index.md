@@ -1,5 +1,5 @@
 ---
-title: comeon casino payment solutions
+title: Comeon casino payment solutions
 description: payment flow for casino customers
 date: "2017-05-02T19:47:09+02:00"
 jobDate: 2017
@@ -14,7 +14,7 @@ I created the first frontend solution for the mobile payment solution. This was 
 
 When more developers joined and redux with react became popular. Thus the demand on communication grew and the application could be improved with conventional standards. During the rewrite the system was documented with flowcharts. 
 
-Challenges and technical aspects that the team handled:
+**Challenges and technical aspects that the team handled:**
 
 - single page application with full many full page views
 - responsive styling

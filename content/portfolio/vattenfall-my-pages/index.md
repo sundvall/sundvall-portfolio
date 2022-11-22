@@ -1,5 +1,5 @@
 ---
-title: vattenfall electricity my pages
+title: Vattenfall electricity my pages
 description: Components for Vattenfall customers and editors
 date: "2022-05-02T19:47:09+02:00"
 jobDate: 2022
@@ -19,7 +19,7 @@ Angular framework was used together with jest for testing, azure for api's, Ngxs
 
 Strict adherence to naming conventions was helpful to maintain the codebase. A lot of attention to the scrum workprocess was used to communicate and manage the progress. Documentation was added to shared wiki. 
 
-Challenges that the team handled:
+**Challenges that the team handled:**
 - multipage sequences of forms
 - session persistence over multipage navigation
 - large sets of templates

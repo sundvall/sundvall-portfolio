@@ -1,5 +1,5 @@
 ---
-title: adssets e-commerce solutions
+title: Adssets e-commerce solutions
 description: Digital formats for advertising online
 date: "2015-05-02T19:47:09+02:00"
 jobDate: 2015
@@ -19,7 +19,7 @@ The work included both legacy formats and new development for video and animated
 A combination of video and images was created into a highly configurable format that could solve a large variation of usecases. The time events of the video triggered images to pop out and land on a scrollable slider, each with links and tracking data. 
 
 
-Challenges and technical aspects:
+**Challenges and technical aspects:**
 
 - no frameworks
 - mix of video and animation
