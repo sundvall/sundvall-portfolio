@@ -5,15 +5,13 @@ date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
 work: [front-end-development, agile teamwork, mentoring]
 techs: [angular, typescript, scss, bootstrap, html, jest, rxjs, ngrx, git, redux-dev-tools]
-designs: [state-management, library-components, storybook, responsive, wcag]
+designs: [state-management, library-components, storybook, responsive, wcag, bank-id]
 thumbnail: /sundvall-portfolio/portfolio/kronofogden/kronofogden.png
-folderName: vattenfall-my-pages
-mainImage: vattenfall-teckna-elavtal.png
 projectUrl: https://kronofogden.se/
 
 ---
 
-At Kronofogden me and my crossfunctional team cream created application flows for logged in users. As an authority the requirements of accessability were very strict. 
+At Kronofogden me and my crossfunctional team cream created application flows for logged in users. As an authority the requirements of accessability were very strict.  
 
 Storybook was used to document and develop library components in isolation.
 

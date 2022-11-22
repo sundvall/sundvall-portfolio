@@ -6,10 +6,13 @@ publishDate: "2022-11-18T12:05:00+02:00"
 ---
 
 Crossbrowser svg animation created in raw svg markup inside angular component
-{{< figure src="/sundvall-portfolio/post/images/animated-svg-connected-to-slider-480.gif" caption="Screenshot from the animated svg connected to a slider" >}}
+<a href="/sundvall-portfolio/post/animated-svg-controlled-by-input-slider/" >
+
+{{< figure src="/sundvall-portfolio/post/images/animated-svg-connected-to-slider-480.gif" caption="Screenshot of animated svg controlled by custom styled input range form element." >}}</a>
 <!--more-->
 
-A decent amount of tweeks were made to make the animation work both in Safari and Chrome browsers.
+A large amount of tweeks were made to make the animation work both in Safari and Chrome browsers.
+Safari turned out to be very strict about the implementation of parameters controlling the movement.
 
 The working example may be seen on [Vattenfall  webpage](https://www.vattenfall.se/elavtal/teckna-elavtal/)
 

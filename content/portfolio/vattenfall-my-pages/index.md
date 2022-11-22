@@ -1,14 +1,12 @@
 ---
 title: vattenfall electricity my pages
-description: Components for Vattenfall customers of electricity
+description: Components for Vattenfall customers and editors
 date: "2022-05-02T19:47:09+02:00"
 jobDate: 2022
-work: [front-end-development, flow-charts, agile teamwork, mentoring]
+work: [front-end-development, flowcharts, agile teamwork, mentoring]
 techs: [angular, typescript, css, html, svg, jest, rxjs, ngrx, git, tailwindcss, azure devops, web-components, episerver, redux-dev-tools]
-designs: [state-management, library-components, storybook, responsive]
+designs: [state-management, flowcharts, library-components, storybook, responsive]
 thumbnail: /sundvall-portfolio/portfolio/vattenfall-my-pages/vattenfall-teckna-elavtal.png
-folderName: vattenfall-my-pages
-mainImage: vattenfall-teckna-elavtal.png
 projectUrl: https://www.vattenfall.se/elavtal/teckna-elavtal/
 
 ---
