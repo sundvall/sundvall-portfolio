@@ -25,6 +25,9 @@ pre {
 .shadow {
     box-shadow: 0 0 5px #112f41;
 }
-.mtop-1 {
-    margin-top:1em;
+.mt-1 {
+    margin-top:1rem !important;
+}
+.mb-1 {
+    margin-bottom: 1rem !important;
 }
