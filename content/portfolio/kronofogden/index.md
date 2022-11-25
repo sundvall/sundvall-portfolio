@@ -11,19 +11,18 @@ projectUrl: https://kronofogden.se/
 
 ---
 
-At Kronofogden me and my crossfunctional team cream created application flows for logged in users. As an authority the requirements of accessability were very strict.  
+At Kronofogden me and my crossfunctional team cream created application flows for logged in users. I was leading the frontend development and focused on upgrades of the technical environment and improvements in developer experience, aside from implementing accessible forms. The environment was very restricted and provided many challenges to provide access to tooling that is in most circumstances are natural. 
 
-Storybook was used to document and develop library components in isolation.
+As an authority the requirements of accessability were very strict, and an external consultancy firm was engaged to evalutate the results. It was very rewarding to get this personal perspectives and aspects on why and how accessability matters.   
 
-Angular framework was used together with Karma for testing, azure for api's, Ngrx for state management and scss together with bootstrap for styling.
+Angular framework was used together with Karma for testing, Ngrx for state management and scss together with bootstrap for styling. Storybook was introduced to document and develop library components in isolation. 
 
-As a team lead I facilitated upgrade of the angular framework and configured tools for development.
-
-**Challenges that the team handled:**
+**Experience:**
 - multipage sequences of forms
 - session persistence over multipage navigation
 - prefilled forms
 - accessability (wcag 2.2)
+
 
 
 

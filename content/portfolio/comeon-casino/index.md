@@ -12,12 +12,10 @@ projectUrl: https://www.comeon.com/
 
 I created the first frontend solution for the mobile payment solution. This was created in pure vanilla javascript and built upon the pre-redux solution of state management called 'flux'. The main idéa was to separate management of data from rendering, and was solved with several 'stores'. The dom-templates were handled by javascript. 
 
-When more developers joined and redux with react became popular. Thus the demand on communication grew and the application could be improved with conventional standards. During the rewrite the system was documented with flowcharts. 
+When more developers joined and redux with react became popular the first solution was transferred into this. During the rewrite the system was documented with flowcharts. 
 
-**Challenges and technical aspects that the team handled:**
-
+**Experience:**
 - single page application with full many full page views
 - responsive styling
 - persistent state over sessions
-- temporary altenation of team  
 - documentation and onboarding

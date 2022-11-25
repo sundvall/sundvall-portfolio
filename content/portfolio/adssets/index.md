@@ -19,11 +19,10 @@ The work included both legacy formats and new development for video and animated
 A combination of video and images was created into a highly configurable format that could solve a large variation of usecases. The time events of the video triggered images to pop out and land on a scrollable slider, each with links and tracking data. 
 
 
-**Challenges and technical aspects:**
-
-- no frameworks
-- mix of video and animation
+**Experience:**
+- vanilla javascript
+- video and animation
 - complex css in third party environment
 - responsive styling
-- mix of native apps and legacy browsers
+- native apps with legacy browsers
 - remote debugging

@@ -10,10 +10,9 @@ thumbnail: /sundvall-portfolio/portfolio/caperio/caperio.png
 projectUrl: https://news.cision.com/se/caperio-ab
 ---
 
-At Caperio me and my team developed a new self service portal. It was an R & D project to provide an interface to workflow software. As part of this I added content to the nodejs api and implemented the design evolved in close collaboration with both interaction designer and backend programmers.
+At Caperio me and my team developed a new self service portal. It was an R & D project to provide a friendly interface to workflow software. As part of this I added content to the nodejs api and implemented the design evolved in close collaboration with both interaction designer and backend programmers.
 
-**Challenges and technical aspects:**
-
+**Experience:**
 - fullstack development
 - pioneer project
 - evolving design

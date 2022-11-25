@@ -4,8 +4,8 @@ description: login flow for electricity customers
 date: "2021-05-02T19:47:09+02:00"
 jobDate: 2021
 work: [front-end-development, flow-charts, agile teamwork, mentoring]
-techs: [angular, typescript, css, html, svg, jest, rxjs, ngxs, git, responsive, storybook, redux-dev-tools]
-designs: [flowcharts, angular-router, single-page-application, bank-id]
+techs: [angular, typescript, css, html, svg, jest, rxjs, ngxs, git, redux-dev-tools]
+designs: [flowcharts, angular-router, single-page-application, responsive, bank-id]
 thumbnail: /sundvall-portfolio/portfolio/vattenfall-login/vattenfall-login.jpg
 projectUrl: https://www.vattenfall.se/
 
@@ -13,9 +13,9 @@ projectUrl: https://www.vattenfall.se/
 
 As an internal project me and my team implemented the design and flow to login with bank-id.
 
-A technical flowchart was created from the given design and was used as a tool to early on discuss aspects of both ui and api-calls. This was used by the team during the entire project and proved to be very useful. Missing parts of the flow were discovered early on and logical improvements could be done before any coding was executed. 
+I introduced the creation of a visual flowchart as one of the first tasks in the agile sprint. It was created from the given ux-design and included the navigation logic and network traffic. This became the gathering point to early discuss aspects of both ui and api-calls. It also simplifed communication outside the dev-team with stakeholders and testers. Missing parts of the flow were early discovered and logical improvements could be done before any coding was executed. 
 
-**Technical aspects that the team handled:**
+**Experience:**
 - short deadline
 - single page application
 - responsive styling

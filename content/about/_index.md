@@ -13,11 +13,11 @@ I'm a front-end developer and artist living in Stockholm, Sweden.
 
 My backround is a mix of art and technology, with a history of both math, 3D-software and classical arts. Programming has always been present in some form, like attempts to create game for Amiga500 in programming language 'amos', and 'pascal' during higher education.
 
-Since 2008 I've been working with commercial code projects. Among these are visualisation of traffic and a service for food-recipes. 
+Since 2008 I've been working with commercial code projects. Among these are visualisation of traffic and a service for food-recipes. Since 2013 I've been part of several agile teams and experienced different blends of scrum, kanban and safe.
 
-I'm self taught in javascript, and have learnt from books, collegues, online resources, blog posts, newsletters and more. 
+I have learnt javascript from books, collegues, online resources, blog posts, newsletters and more. I enjoy the creation and buildprocess of coding in itself and to constantly improve skills and knowledge. The latest time I've been fascinated by functional programming.
 
-Since 2013 I've been part of several agile teams and tried different blends of scrum, kanban and safe. 
+The most enjoyable situations are when there is a visual output from the code, thus making abstract information transform into something you can see or hear.
 
 **Coding guiding stars, I believe ...**
 - testdriven development creates better code. 

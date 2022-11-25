@@ -11,7 +11,9 @@ projectUrl: https://www.vattenfall.se/elavtal/teckna-elavtal/
 
 ---
 
-At Vattenfall me and my crossfunctional team cream created content and components for customers of electricity and content editors managing the site. The components were created as webcomponents possible to use from cms (episerver), and integrated library components to provide consistency of appearance.
+At Vattenfall me and my crossfunctional team cream created components for customers and editors.
+
+The components were created as webcomponents possible to use from cms (episerver), and integrated library components to provide consistency of appearance.
 
 Storybook was used to document and develop library components in isolation.
 
@@ -19,12 +21,13 @@ Angular framework was used together with jest for testing, azure for api's, Ngxs
 
 Strict adherence to naming conventions was helpful to maintain the codebase. A lot of attention to the scrum workprocess was used to communicate and manage the progress. Documentation was added to shared wiki. 
 
-**Challenges that the team handled:**
+**Experience:**
 - multipage sequences of forms
 - session persistence over multipage navigation
 - large sets of templates
 - large amount of combinations of test cases
 - prefilled forms
+- integration with cms
 
 
 
