@@ -4,13 +4,13 @@ description: Welcome to this coding portfolio
 images: ["/sundvall-portfolio/images/portrait.jpeg"]
 ---
 
-Hi!:wave:  
+Hi!  
 
 I'm a front-end developer and artist living in Stockholm, Sweden.
 
 Specialties: 
 - front-end web programming
-- complex web apps created in angular or react with state management
+- web apps created in angular or react with state management
 - agile development
 - art
 

@@ -4,12 +4,9 @@ description: Hi, I'm Martin Sundvall
 images: ["/sundvall-portfolio/images/portrait.jpeg"]
 ---
 
+<img class="shadow round square-150 block mb-1" src="/sundvall-portfolio/images/portrait.jpeg" caption="portrait" />
 
-Hi!:wave:  
-
-<img class="shadow round square-150 block" src="/sundvall-portfolio/images/portrait.jpeg" caption="portrait" />
-
-I'm a front-end developer and artist living in Stockholm, Sweden.
+I'm a front-end developer living in Stockholm, Sweden.
 
 My backround is a mix of art and technology, with a history of both math, 3D-software and classical arts. Programming has always been present in some form, like attempts to create game for Amiga500 in programming language 'amos', and 'pascal' during higher education.
 
@@ -19,7 +16,7 @@ I have learnt javascript from books, collegues, online resources, blog posts, ne
 
 The most enjoyable situations are when there is a visual output from the code, thus making abstract information transform into something you can see or hear.
 
-**Coding guiding stars, I believe ...**
+**Coding guiding stars**
 - testdriven development creates better code. 
 - pure functional declarative code simplifies maintenance.
 - the best code is written in collaboration.
