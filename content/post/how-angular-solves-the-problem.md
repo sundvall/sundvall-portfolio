@@ -2,7 +2,7 @@
 title: Use the tools of angular
 description: Work with and not against the tools
 date: "2023-03-21T10:37:55+02:00"
-publishDate: "2023-03-21T12:05:00+02:00"
+publishDate: "2023-03-21T12:05:01+02:00"
 ---
 With the nose deep down in the context of an frontend application source code, it is important to remember why the framework is there and how to support its usage.
 As an example, data and logic is separated and flows through inputs, outputs and services. It is possible to pass data around in other ways, but then the tool is unintentionally used.
