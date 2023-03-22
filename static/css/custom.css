@@ -9,7 +9,9 @@ body {
 pre {
     overflow: scroll;
 }
-
+ul, li {
+    display: block;
+}
 .round {
     border-radius: 100%;
 }
