@@ -36,7 +36,7 @@ Xss occurs when webform input is converted into javascript and executed in the c
 
 
 ## goal
-How can an unprotected form be used to trigger an alert prompt?
+How can an unprotected form be used to trigger scripts?
 
 ## TL;DR
 When nonvalidated input is added to an element with "innerHTML" without replacement of special characters, it can be used to convert the text into javascript, due to browsers responsibility to convert markup into both text and scripts. 
