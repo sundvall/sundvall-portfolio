@@ -12,6 +12,9 @@ pre {
 ul, li {
     display: block;
 }
+li {
+    display: list-item;
+}
 .round {
     border-radius: 100%;
 }
