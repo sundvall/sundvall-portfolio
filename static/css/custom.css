@@ -7,10 +7,13 @@ body {
 }
 
 pre {
-    overflow: scroll;
+    overflow:auto;
 }
 ul, li {
     display: block;
+}
+ul {
+    margin:0;
 }
 li {
     display: list-item;

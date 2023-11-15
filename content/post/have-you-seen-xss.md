@@ -11,6 +11,29 @@ Laboration to see XSS occur in webform.
 Xss occurs when webform input is converted into javascript and executed in the context of the site. The protection is "validation of input and sanitazon of output". But, how, does this really occur? How can this be tested? This post examines this.
 <!--more-->
 
+- [goal](#goal)
+- [TL;DR](#tldr)
+  - [The vulnerability](#the-vulnerability)
+- [xss laboration code](#xss-laboration-code)
+  - [The html and javascript](#the-html-and-javascript)
+  - [Scripts](#scripts)
+  - [local server](#local-server)
+- [results](#results)
+  - [text that converts to javascript](#text-that-converts-to-javascript)
+  - [Converts partly or not into javascript](#converts-partly-or-not-into-javascript)
+  - [More testcases](#more-testcases)
+- [The treatment](#the-treatment)
+  - [General approach](#general-approach)
+  - [What does the library provide?](#what-does-the-library-provide)
+  - [Svg's and attributes](#svgs-and-attributes)
+  - [A right way to add a script using innerHTML](#a-right-way-to-add-a-script-using-innerhtml)
+  - [Escape special characters with htmlentities](#escape-special-characters-with-htmlentities)
+- [References](#references)
+    - [Owasp Code review](#owasp-code-review)
+  - [Owasp Cheatsheet](#owasp-cheatsheet)
+  - [General info about webforms](#general-info-about-webforms)
+- [Summary](#summary)
+
 
 ## goal
 How can an unprotected form be used to trigger an alert prompt?
@@ -119,11 +142,14 @@ app.post('/bar', function (req, res) {
 });
 ```
 
-## testcases
+## results
+The purpose of this laboration is to see forminput in an unprotected webcontext convert into commands.
+All testcases are derived from [https://html5sec.org/](https://html5sec.org/).
+Notable is that merely the "innerHTML" method gives the most effect.
 
-All testcases are found at [https://html5sec.org/](https://html5sec.org/).
+{{< figure src="/sundvall-portfolio/post/images/security-lab-fetch.gif" caption="Textstring added to form input and added to element with innerHTML without sanitazion is here capable of doing a networkrequest to local endpoint." >}}
 
-### converts to javascript
+### text that converts to javascript
 All these strings are converted into javascript:
 ```HTML
 <img src='x' onerror='alert(1)'>
@@ -132,7 +158,7 @@ All these strings are converted into javascript:
 
 <form id="test"></form><button form="test" formaction="javascript:console.log('what???')">Click here - execute exiting script!</button>
 
-<form id="test"></form><button form="test" formaction="javascript:fetch('http://localhost:3456').then((e,f)=>console.log(e)).catch(f=>console.log(f))">Click here - execute fetch!</button>
+<form id="test"></form><button form="test" formaction="javascript:fetch('/foo').then((e,f)=>console.log(e)).catch(f=>console.log(f))">Click here - execute fetch!</button>
 
 <input onfocus=write('console') autofocus>
 
@@ -143,7 +169,7 @@ All these strings are converted into javascript:
 
 This script has the effect of replacement of the entire content whenever "tab" or "click" is used:
 ```HTML
-<input onfocus=write(1) autofocus>// denna rad lägger till en nod så att när man klickar eller tabbar på sidan så byts allt innehåll till statement i 'write'
+<input onfocus=write(1) autofocus>
 ```
 This script prints a number, but only for "x" and does not work with for example "alert(y)":
 ```HTML
@@ -163,7 +189,7 @@ This script gets the value of another element and adds it to a redirection:
 
 
 
-## Converts partly or not into javascript
+### Converts partly or not into javascript
 
 If src='foo' is replaced by src='x' this converts into script:
 ```HTML
@@ -203,7 +229,8 @@ This script creates an input element. When the element is focused a script node 
 <input onfocus=write('<script>console.log(1)_and_more') autofocus>
 ```
 
-
+### More testcases
+[https://html5sec.org/](https://html5sec.org/)
 
 ## The treatment
 To fully protect against xss in forms is out of the scope of this article. Some guiding links and advice follows.
@@ -266,5 +293,5 @@ Understand how your framework prevents XSS and where it has gaps. There will be 
 ### General info about webforms
 [More about forms](https://www.twilio.com/blog/everything-you-ever-wanted-to-know-about-secure-html-forms-html)
 
-### More testcases
-[https://html5sec.org/](https://html5sec.org/)
+## Summary
+When nonvalidated input is added to an element with "innerHTML" without replacement of special characters, it can be used to convert the text into javascript, due to browsers responsibility to convert markup into both text and scripts. Hopefully this article and the connected source code gives some insights into what may happen in an unsecure webform implementation.
