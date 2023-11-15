@@ -25,6 +25,7 @@ Xss occurs when webform input is converted into javascript and executed in the c
 - [The treatment](#the-treatment)
   - [General approach](#general-approach)
   - [What does the library provide?](#what-does-the-library-provide)
+  - [The insertion into the DOM](#the-insertion-into-the-dom)
   - [Svg's and attributes](#svgs-and-attributes)
   - [A right way to add a script using innerHTML](#a-right-way-to-add-a-script-using-innerhtml)
   - [Escape special characters with htmlentities](#escape-special-characters-with-htmlentities)
@@ -62,9 +63,6 @@ Alternative setups to test html injection may be found at [Owasp](https://owasp.
 The markup of the laboration consists of a form with a text-input. It's value is retrieved by the javascript click handler, and inserted into an output element.
 
 
-[This doc from MDN is used to create output](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Safely_inserting_external_content_into_a_page)
-Other possibilities are "setAttribute" and "createTextNode". The laboration intentionally make use of notorious "innerHTML".
-
 ```HTML
 <form method="post" action="/bar">
   <!-- input field -->
@@ -82,9 +80,11 @@ Other possibilities are "setAttribute" and "createTextNode". The laboration inte
 
 
 ### Scripts
-Three clickhandlers are added to use three variations of insertion: innehHTML, textContent and setHTML. 
+Three clickhandlers are added to use three variations of insertion: [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML), [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) and experimental [setHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/setHTML). 
 
-Also other methods are cabable of text to script conversion. One of them is "setInterval". This is added to the page and evaluates the forminput directly without any sanitazion and may be interrupted.
+Also other methods are cabable of text to script conversion. One of them is ["setInterval"](https://developer.mozilla.org/en-US/docs/Web/API/setInterval). This is added to the page and evaluates the forminput directly without any sanitazion and may be interrupted.
+
+Other possibilities are ["setAttribute"](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) and ["createTextNode"](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode). The laboration intentionally make use of notorious "innerHTML".
 
 ```javascript
    // Print the value as innerHTML to the output element
@@ -145,9 +145,9 @@ app.post('/bar', function (req, res) {
 ## results
 The purpose of this laboration is to see forminput in an unprotected webcontext convert into commands.
 All testcases are derived from [https://html5sec.org/](https://html5sec.org/).
-Notable is that merely the "innerHTML" method gives the most effect.
+Notable is that merely the "innerHTML" method to readd the value to the DOM gives the most effect.
 
-{{< figure src="/sundvall-portfolio/post/images/security-lab-fetch.gif" caption="Textstring added to form input and added to element with innerHTML without sanitazion is here capable of doing a networkrequest to local endpoint." >}}
+{{< figure src="/sundvall-portfolio/post/images/security-lab-fetch.gif" caption="Textstring added to form input and added to element with innerHTML creates a form with button that on cick does a networkrequest to local endpoint." >}}
 
 ### text that converts to javascript
 All these strings are converted into javascript:
@@ -237,10 +237,13 @@ To fully protect against xss in forms is out of the scope of this article. Some 
 
 ### General approach
 *Search for all places where user input through a HTTP request could possibly make its way into the HTML output.*  
-[MDN](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)  
+[MDN form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)  
 
 ### What does the library provide?
 It is useful to understand sequrity risks based on user input, to be able to take the adequate measures. It is valuable to be able to estimate the amount of safety measures that is enough for a specific application. For example, the framework [Angular](https://angular.io/guide/security#preventing-cross-site-scripting-xss) provides protection against xss, and how much extra protective measures then have to be implemented? 
+
+### The insertion into the DOM
+[This doc from MDN describes how to safetly add output](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Safely_inserting_external_content_into_a_page)
 
 ### Svg's and attributes
 *Be very careful when HTML attributes are used to carry HTML data that is later being used on the website"* 
@@ -277,7 +280,7 @@ To write this line for an image tag...
 ["XSS Owasp"](https://owasp.org/www-community/attacks/xss/)  
 
 ****"search for all places where user input through a HTTP request could possibly make its way into the HTML output."
-[MDN] (https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)  
+[MDN form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)  
 
 #### Owasp Code review
 Especially page 73 about XSS in frameworks
@@ -291,7 +294,7 @@ Understand how your framework prevents XSS and where it has gaps. There will be 
 [Owasp cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 
 ### General info about webforms
-[More about forms](https://www.twilio.com/blog/everything-you-ever-wanted-to-know-about-secure-html-forms-html)
+[Well written blogpost about webforms](https://www.twilio.com/blog/everything-you-ever-wanted-to-know-about-secure-html-forms-html)
 
 ## Summary
 When nonvalidated input is added to an element with "innerHTML" without replacement of special characters, it can be used to convert the text into javascript, due to browsers responsibility to convert markup into both text and scripts. Hopefully this article and the connected source code gives some insights into what may happen in an unsecure webform implementation.
